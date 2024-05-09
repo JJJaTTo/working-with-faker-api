@@ -52,19 +52,19 @@ input.addEventListener('input', (e) => {
   let {value} = e.target;
   console.log(typeof sortBy.value)
 
-  // if (sortBy.value) {
+  if (sortBy.value) {
 
-  //   const filteredPeople = people.filter((person) => {
-  //     return person.name.toLowerCase().includes(value.toLowerCase());
-  //   });
-  //   console.log('value is string', filteredPeople)
-  // }else{
+    const filteredPeople = people.filter((person) => {
+      return person.name.toLowerCase().includes(value.toLowerCase());
+    });
+    console.log('value is string', filteredPeople)
+  }else{
 
 
-  // const filteredPeople = people.filter((person) => {
-  //   return person.age === value;
-  // });
+  const filteredPeople = people.filter((person) => {
+    return person.age === value;
+  });
 
-  // console.log(filteredPeople)
+  console.log(filteredPeople)
 }
 });
